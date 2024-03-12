@@ -31,8 +31,8 @@ export default function Navbar() {
     <>
     <nav className='h-16 w-full bg-[#222222] flex text-white justify-between py-6 px-6 readex sticky top-0 z-30'>
 
-        <div>
-            <a> Ronny</a>
+        <div className='flex justify-center items-center'>
+            <a className='metal text-3xl'> Ronny's Portfolio</a>
         </div>
 
         
@@ -64,7 +64,7 @@ export default function Navbar() {
         </div> 
 
         <div className='gap-6 flex items-center'>
-        <a href="https://www.linkedin.com/in/ronny-olmos-roman/">
+        <a target="_blank" href="https://www.linkedin.com/in/ronny-olmos-roman/">
         <svg
                 
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,9 +84,10 @@ export default function Navbar() {
                 <path d="M8 8l0 .01" />
                 <path d="M12 16l0 -5" />
                 <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-              </svg></a>
+              </svg>
+              </a>
 
-              <a href="https://github.com/RonnyOl">
+              <a target="_blank"  href="https://github.com/RonnyOl">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-12 h-12 icon icon-tabler icon-tabler-brand-github hover:stroke-[#ffdd35] transition hover:drop-shadow-[0_0px_10px_rgba(255,230,107,0.2)]"

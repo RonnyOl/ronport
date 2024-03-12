@@ -15,7 +15,6 @@ export default function CardMe() {
     <section className="bg-[#222222] lg:h-96 h-fit py-16 w-full text-[#ffe66b] flex flex-col gap-6 items-center justify-center text-center lg:text-left league">
       <div className="flex items-center gap-16 items-center flex-col lg:flex-row">
         <div className="">
-          
           <img className={isRotating ? "imagenMia w-80 h-80" :  " w-80 h-80 cursor-pointer "} src="myself.png" alt="pfpMe" onClick={handleImageClick} />
         </div>
 
@@ -36,8 +35,8 @@ export default function CardMe() {
             </div>
 
             <div className="">
-              <button className="text-white text-lg border border-[#ffdb29] hover:text-[#1e1e1e] transition rounded-2xl p-3 w-32 hover:bg-[#ffdb29] hover:shadow-[0_0_0.4rem] hover:shadow-[#ffda1e]">
-                Contact me
+              <button  className="text-white text-lg border border-[#ffdb29] hover:text-[#1e1e1e] transition rounded-2xl p-3 w-32 hover:bg-[#ffdb29] hover:shadow-[0_0_0.4rem] hover:shadow-[#ffda1e]">
+                <a href="mailto:ronnyolmos16@gmail.com">Contact me</a>
               </button>
             </div>
           </div>

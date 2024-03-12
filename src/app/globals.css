@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.firstRotate {
-  
+:root {
+  --main-bg-color: #222222;
+  --secondary-bg-color: #121212;
 }
 
 .BarkMobb {
@@ -79,10 +79,7 @@
   opacity: 0; /* Oculta la primera imagen de fondo al hacer hover */
 }
 
-:root {
-  --main-bg-color: #222222;
-  --secondary-bg-color: #121212;
-}
+
 .zoom-in-out-box {
 
   animation: fade-in-right 0.5s ease;
@@ -113,3 +110,6 @@
   font-family: var(--font-league);
 }
 
+.metal {
+  font-family: var(--font-metal);
+}
