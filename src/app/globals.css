@@ -2,32 +2,114 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.firstRotate {
+  
+}
+
+.BarkMobb {
+  position: relative;
+  background-image: url("/Barkmobb2.png");
+}
+
+.BarkMobb::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/a.png'); /* Primera imagen de fondo */
+  background-position: center;
+  background-size: cover;
+  transition: opacity 0.5s ease-in-out; /* Transición suave de opacidad */
+}
+
+.BarkMobb:hover::before {
+  opacity: 0; /* Oculta la primera imagen de fondo al hacer hover */
+}
+
+
+.festiCool {
+  object-fit: cover;
+  position: relative;
+  background-image: url("/festicool2.png");
+}
+
+.festiCool::before {
+  object-fit: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/festicool.png'); /* Primera imagen de fondo */
+  background-position: center;
+  background-size: cover;
+  transition: opacity 0.5s ease-in-out; /* Transición suave de opacidad */
+}
+
+.festiCool:hover::before {
+  object-fit: cover;
+  opacity: 0; /* Oculta la primera imagen de fondo al hacer hover */
+}
+
+
+.orderMe {
+  position: relative;
+  background-image: url("/orderme2.png");
+  object-fit: cover;
+}
+
+.orderMe::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/orderme.png'); /* Primera imagen de fondo */
+  background-position: center;
+  background-size: cover;
+  transition: opacity 0.5s ease-in-out; /* Transición suave de opacidad */
+}
+
+.orderMe:hover::before {
+  opacity: 0; /* Oculta la primera imagen de fondo al hacer hover */
+}
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --main-bg-color: #222222;
+  --secondary-bg-color: #121212;
+}
+.zoom-in-out-box {
+
+  animation: fade-in-right 0.5s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@keyframes fade-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100px); /* Empieza 50px a la izquierda */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Termina en su posición original */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.imagenMia {
+  transition: transform 1s ease;
+  transform: rotateY(360deg)
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.readex {
+  font-family: var(--font-readex);
+  font-weight: 400;
 }
+
+.league {
+  font-family: var(--font-league);
+}
+
