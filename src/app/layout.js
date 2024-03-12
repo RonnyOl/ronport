@@ -10,6 +10,9 @@ const metal = Metal({subsets: ["latin"], weight: "400", variable: "--font-metal"
 export const metadata = {
   title: "Ronny's portfolio",
   description: "¡Welcome! look at my portfolio.",
+  icons:  {
+    icon: "/favicon.ico"
+  }
 };
 
 export default function RootLayout({ children }) {
