@@ -79,6 +79,28 @@
   opacity: 0; /* Oculta la primera imagen de fondo al hacer hover */
 }
 
+.vibras {
+  object-fit: cover;
+  position: relative;
+  background-image: url("/vibras2.png");
+}
+
+.vibras::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/vibras.png'); /* Primera imagen de fondo */
+  background-position: center;
+  background-size: cover;
+  transition: opacity 0.5s ease-in-out; /* Transición suave de opacidad */
+}
+
+.vibras:hover::before {
+  opacity: 0; /* Oculta la primera imagen de fondo al hacer hover */
+}
 
 .zoom-in-out-box {
 

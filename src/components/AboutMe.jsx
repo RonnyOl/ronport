@@ -15,19 +15,20 @@ import MysqlLogo from "./svgs/databases/MysqlLogo";
 import FirebaseLogo from "./svgs/databases/FirebaseLogo";
 import GitHubLogo from "./svgs/cV/GitHubLogo";
 import GitLogo from "./svgs/cV/GitLogo";
+import SpringLogo from "./svgs/backend/SpringLogo";
+import MongoLogo from "./svgs/databases/MongoLogo";
+import NodeLogo from "./svgs/backend/NodeLogo";
 
 export default function AboutMe() {
   return (
     <div className="bg-[#121212] min-h-[180rem] sm:min-h-[130rem] lg:min-h-screen w-full text-white flex items-center flex-col gap-16 league lg:p-24">
-      
+
       <div className="flex gap-6 w-full flex-col lg:flex-row items-center pt-16 text-center lg:text-left lg:pt-0">
         <div className="justify-center flex flex-col items-center gap-6 w-3/6">
           <h1 className="text-3xl readex aboutMe">About me</h1>
 
           <p className="text-xl">
-            I am a responsible and committed person, looking to gain work
-            experience in a position where I can learn, improve and achieve my
-            work objectives in a pleasant and comfortable environment.
+            Im a responsible and committed person, eager to gain work experience in a position where I can learn, grow, and achieve my professional objectives in a pleasant and collaborative environment. I am proactive, adaptable, and always willing to take on new challenges, aiming to contribute positively to the team and develop my skills for future opportunities.
           </p>
         </div>
 
@@ -37,7 +38,7 @@ export default function AboutMe() {
           <div>
             <ul className="flex justify-start items-start flex-col w-full text-xl gap-2">
               <li className="flex">
-                <b className="w-24 text-xl">Age</b> 20 y/o
+                <b className="w-24 text-xl">Age</b> 21 y/o
               </li>
               <li className="flex ">
                 <b className="w-24 text-xl">Phone</b>+54 11 2324-2319
@@ -68,30 +69,30 @@ export default function AboutMe() {
             </h2>
             <ul className="flex gap-6 sm:flex-wrap flex-col sm:flex-row justify-center min-h-fit max-h-fit items-center">
               <li className="h-16 border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                
+
                 <HtmlLogo att={"w-8 h-8"} /> HTML5
               </li>
               <li className=" border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                
+
                 <CssLogo att={"w-8 h-8"} /> CSS
               </li>
               <li className="h-16 border-b hover:animate-pulse hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                
+
                 <JsLogo att={"w-8 h-8"} />
                 JavaScript
-                
+
               </li>
               <li className="h-16 border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                
+
                 <ReactLogo att={"w-8 h-8"} />
                 React
               </li>
               <li className="h-16 border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                
+
                 <NextLogo att={"w-8 h-8"} /> NextJS
               </li>
               <li className="border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                
+
                 <TailLogo att={"w-8 h-8"} /> TailWindCSS
               </li>
             </ul>
@@ -103,18 +104,27 @@ export default function AboutMe() {
             </h2>
             <ul className="flex gap-6 sm:flex-wrap flex-col sm:flex-row justify-center min-h-fit max-h-fit items-center">
               <li className="h-16 border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                
+
                 <JavaLogo att={"w-8 h-8"} /> Java
               </li>
               <li className="h-16  border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                
+
                 <PhpLogo att={"w-8 h-8"} /> PHP
               </li>
-              
+              <li className="h-16  border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
+                <SpringLogo att={"w-8 h-8"} /> Spring
+              </li>
+              <li className="h-16 border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
+                <CLogo att={"w-8 h-8"} /> C
+              </li>
+              <li className="h-16 border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
+                <NodeLogo att={"w-8 h-8"} /> Node
+              </li>
+
             </ul>
           </div>
 
-            
+
 
           <div className="others flex flex-row lg:gap-3 w-full justify-center items-center flex-wrap lg:flex-nowrap gap-20">
             <div className="w-6/12 flex flex-col justify-center items-center ">
@@ -123,12 +133,17 @@ export default function AboutMe() {
               </h2>
               <ul className="flex flex-row gap-6 h-16">
                 <li className="border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                  
+
                   <FirebaseLogo att={"w-8 h-8"} /> Firebase
                 </li>
                 <li className="border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                  
+
                   <MysqlLogo att={"w-8 h-8"} /> MySql
+                </li>
+
+                <li className="h-16  border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
+
+                  <MongoLogo att={"w-8 h-8"} /> MongoDB
                 </li>
               </ul>
             </div>
@@ -138,18 +153,18 @@ export default function AboutMe() {
               </h2>
               <ul className="flex flex-row gap-6 h-16">
                 <li className="border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                  
+
                   <GitHubLogo att={"w-8 h-8"} /> GitHub
                 </li>
                 <li className="border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                  
+
                   <GitLogo att={"w-8 h-8"} /> Git
                 </li>
               </ul>
             </div>
           </div>
 
-          
+
 
 
         </div>
@@ -161,44 +176,44 @@ export default function AboutMe() {
         <div className="w-3/6 justify-center items-center flex flex-col gap-6">
           <h1 className="text-3xl white readex w-96 py-6"><span className="text-[#ffe66b]">Language</span> Skills</h1>
           <ul className="flex gap-6 h-16">
-          <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                  
-                  <p>Spanish (Native)</p>
-          </li>
+            <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
 
-          <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                  
-                  <p>English (Fluent)</p>
-          </li>
+              <p>Spanish (Native)</p>
+            </li>
+
+            <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
+
+              <p>English (Fluent)</p>
+            </li>
           </ul>
         </div>
 
         <div className="w-3/6 justify-center items-center flex flex-col gap-6 ">
-        <h1 className="text-3xl white readex"><span className="text-[#ffe66b]">Soft</span> Skills</h1>
+          <h1 className="text-3xl white readex"><span className="text-[#ffe66b]">Soft</span> Skills</h1>
           <ul className="flex gap-6 h-16 flex-col items-center sm:flex-row sm:flex-wrap sm:items-center sm:justify-center">
-          <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                  
-                  <p>Creativity</p>
-          </li>
+            <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
 
-          <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                  
-                  <p>Teamwork</p>
-          </li>
+              <p>Creativity</p>
+            </li>
 
-          <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                  
-                  <p>Adaptability</p>
-          </li>
-          <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
-                  
-                  <p>Discipline</p>
-          </li>
+            <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
+
+              <p>Teamwork</p>
+            </li>
+
+            <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
+
+              <p>Adaptability</p>
+            </li>
+            <li className="text-2xl border-b hover:animate-pulse hover:rounded-lg hover:border-[#ffe66b] hover:border-b-4 p-3 flex items-center gap-2 duration-150 ease-in-out hover:drop-shadow-[0_0px_15px_rgba(255,230,107,0.35)]">
+
+              <p>Discipline</p>
+            </li>
 
           </ul>
         </div>
 
-        </div>
+      </div>
     </div>
   );
 }
