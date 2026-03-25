@@ -28,7 +28,13 @@
 .BarkMobb:hover::before {
   opacity: 0; /* Oculta la primera imagen de fondo al hacer hover */
 }
-
+@keyframes border-rotate {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+.animate-border-slow {
+animation: border-rotate 4s linear infinite;
+ }
 
 .festiCool {
   object-fit: cover;
